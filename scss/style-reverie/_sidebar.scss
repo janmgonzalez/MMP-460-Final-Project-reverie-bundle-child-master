@@ -1,0 +1,36 @@
+// Start the sidebar
+#sidebar {
+	margin-top: rem-calc(20);
+}
+
+#sidebar, .footer-widget {
+	//this overwrites the Foundation .panel default
+	.panel {
+		border: none;
+		background-color: #0092a5;
+		padding: rem-calc(24) rem-calc(30);
+		border-radius: 5px;
+		a {
+			color: #09def1;
+			font-size: rem-calc(15);
+			&:hover, &:focus {
+				color: #000000;
+			}
+		}
+	}
+	ul {
+		list-style-type: none;
+		margin-left: 0;
+	}
+	.widget {
+		h4 {
+			font-family: 'Open Sans', sans-serif;
+			text-transform: uppercase;
+			font-size: rem-calc(16);
+			padding-bottom: rem-calc(16);
+			border-bottom: 1px solid #ddd;
+			color: #ffffff;
+			font-weight: 300;
+		}
+	}
+}

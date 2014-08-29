@@ -1,0 +1,41 @@
+.gsinglepost .panel {
+	background-color: white ;
+	border: 1px solid #fff;	
+}
+
+.gsinglepost .panel p{
+	font-family: 'Junge', serif;
+	/* font-weight: bold; */
+	font-size: 1.2em;
+}
+
+.gsinglepost .panel h4{
+	color:#ffffff;
+	font-family:'Open Sans', sans-serif;
+	font-weight: 100;
+	background: #127c8a;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #00badb;
+}
+
+.gsinglepost .panel h4 a{
+	color: #fff;
+}
+
+.entry-author{
+	width: 100%;
+	margin:0;
+	padding:20px;
+}
+
+.entry-author h4{
+	width: 50%;
+}
+
+#comments h3{
+	font-family:'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	color: #00879e;
+}

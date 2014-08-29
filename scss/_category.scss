@@ -1,0 +1,56 @@
+.catpage #content{
+	background-color: rgba(255,255,255,1) ;
+	border: 1px solid #fff;
+}
+.catlist{
+	background-color: #04616d ;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;	
+	border-radius: 5px;
+}
+
+.catlist a{
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.catlist a:hover{
+	color: #04c7e0;
+}
+
+.catauthor {
+	font-family: 'Open Sans', sans-serif;
+	color: #04616d;
+	font-weight: 100;
+	font-size: 0.9em;
+	font-style:italic;
+}
+
+.catauthor a{
+	color: #0daabe;
+	font-weight: 400;
+}
+
+.catauthor a:hover{
+	text-decoration:underline;
+}
+.cat_title{
+	font-family: 'Open Sans', sans-serif;
+	color: #04616d;
+	font-size: 2.5em;
+	font-weight: 200;
+}
+
+.mainline{
+	background-color: #04616d;
+	border-color: #04616d;
+}
+
+.customedit h2 a{
+	color: white;
+}
+
+.customedit h2 a:hover{
+	color: #04c7e0;
+}

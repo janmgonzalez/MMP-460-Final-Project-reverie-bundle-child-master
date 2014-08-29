@@ -1,0 +1,929 @@
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+/* line 300, ../scss/foundation/components/_global.scss */
+meta.foundation-version {
+  font-family: "/5.2.1/"; }
+
+/* line 305, ../scss/foundation/components/_global.scss */
+meta.foundation-mq-small {
+  font-family: "/only screen and (max-width: 40em)/";
+  width: 0em; }
+
+/* line 310, ../scss/foundation/components/_global.scss */
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 40.063em; }
+
+/* line 315, ../scss/foundation/components/_global.scss */
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em; }
+
+/* line 320, ../scss/foundation/components/_global.scss */
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.063em)/";
+  width: 90.063em; }
+
+/* line 325, ../scss/foundation/components/_global.scss */
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.063em)/";
+  width: 120.063em; }
+
+/* line 330, ../scss/foundation/components/_global.scss */
+meta.foundation-data-attribute-namespace {
+  font-family: false; }
+
+/* line 335, ../scss/foundation/components/_global.scss */
+html, body {
+  height: 100%; }
+
+/* line 338, ../scss/foundation/components/_global.scss */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 344, ../scss/foundation/components/_global.scss */
+html,
+body {
+  font-size: 100%; }
+
+/* line 348, ../scss/foundation/components/_global.scss */
+body {
+  background: white;
+  color: #222222;
+  padding: 0;
+  margin: 0;
+  font-family: "Junge", serif;
+  font-weight: light;
+  font-style: normal;
+  line-height: 1;
+  position: relative;
+  cursor: default; }
+
+/* line 361, ../scss/foundation/components/_global.scss */
+a:hover {
+  cursor: pointer; }
+
+/* line 364, ../scss/foundation/components/_global.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* line 366, ../scss/foundation/components/_global.scss */
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* line 370, ../scss/foundation/components/_global.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object {
+  max-width: none !important; }
+
+/* line 377, ../scss/foundation/components/_global.scss */
+.left {
+  float: left !important; }
+
+/* line 378, ../scss/foundation/components/_global.scss */
+.right {
+  float: right !important; }
+
+/* line 379, ../scss/foundation/components/_global.scss */
+.clearfix {
+  *zoom: 1; }
+  /* line 145, ../scss/foundation/components/_global.scss */
+  .clearfix:before, .clearfix:after {
+    content: " ";
+    display: table; }
+  /* line 146, ../scss/foundation/components/_global.scss */
+  .clearfix:after {
+    clear: both; }
+
+/* line 380, ../scss/foundation/components/_global.scss */
+.hide {
+  display: none; }
+
+/* line 386, ../scss/foundation/components/_global.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 389, ../scss/foundation/components/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 399, ../scss/foundation/components/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px; }
+
+/* line 402, ../scss/foundation/components/_global.scss */
+select {
+  width: 100%; }
+
+/* line 137, ../scss/foundation/components/_pagination.scss */
+ul.pagination {
+  display: block;
+  height: 1.5rem;
+  margin-left: -0.3125rem; }
+  /* line 100, ../scss/foundation/components/_pagination.scss */
+  ul.pagination li {
+    height: 1.5rem;
+    color: #222222;
+    font-size: 0.875rem;
+    margin-left: 0.3125rem; }
+    /* line 106, ../scss/foundation/components/_pagination.scss */
+    ul.pagination li a {
+      display: block;
+      padding: 0.0625rem 0.625rem 0.0625rem;
+      color: #999999;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+    /* line 113, ../scss/foundation/components/_pagination.scss */
+    ul.pagination li:hover a,
+    ul.pagination li a:focus {
+      background: #e6e6e6; }
+    /* line 51, ../scss/foundation/components/_pagination.scss */
+    ul.pagination li.unavailable a {
+      cursor: default;
+      color: #999999; }
+    /* line 55, ../scss/foundation/components/_pagination.scss */
+    ul.pagination li.unavailable:hover a, ul.pagination li.unavailable a:focus {
+      background: transparent; }
+    /* line 64, ../scss/foundation/components/_pagination.scss */
+    ul.pagination li.current a {
+      background: #008cba;
+      color: white;
+      font-weight: bold;
+      cursor: default; }
+      /* line 70, ../scss/foundation/components/_pagination.scss */
+      ul.pagination li.current a:hover, ul.pagination li.current a:focus {
+        background: #008cba; }
+  /* line 124, ../scss/foundation/components/_pagination.scss */
+  ul.pagination li {
+    float: left;
+    display: block; }
+
+/* Pagination centred wrapper */
+/* line 142, ../scss/foundation/components/_pagination.scss */
+.pagination-centered {
+  text-align: center; }
+  /* line 124, ../scss/foundation/components/_pagination.scss */
+  .pagination-centered ul.pagination li {
+    float: none;
+    display: inline-block; }
+
+/* Start to customize Reverie */
+/* line 5, ../scss/style-reverie/_general.scss */
+a, a:visited, a:hover, a:visited:hover {
+  -moz-transition: all 100ms linear;
+  -o-transition: all 100ms linear;
+  -webkit-transition: all 100ms linear;
+  transition: all 100ms linear; }
+
+/* line 10, ../scss/style-reverie/_general.scss */
+body > header.contain-to-grid {
+  margin-bottom: 2rem;
+  max-width: 100%;
+  padding-bottom: 0; }
+
+/* line 22, ../scss/style-reverie/_general.scss */
+#content {
+  background-color: #fff;
+  border: 1px solid #ddd; }
+
+/* line 33, ../scss/style-reverie/_general.scss */
+.index-card {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem; }
+
+/* line 39, ../scss/style-reverie/_general.scss */
+.post header,
+.page header {
+  margin-bottom: 1.25rem; }
+
+/* line 46, ../scss/style-reverie/_general.scss */
+span.author,
+time {
+  font-size: 0.9375rem;
+  color: #999; }
+  /* line 50, ../scss/style-reverie/_general.scss */
+  span.author a,
+  time a {
+    color: #999;
+    font-weight: bold; }
+    /* line 53, ../scss/style-reverie/_general.scss */
+    span.author a:hover, span.author a:focus,
+    time a:hover,
+    time a:focus {
+      color: #222222; }
+
+/* line 61, ../scss/style-reverie/_general.scss */
+.entry-author {
+  background-color: #fbfbfb;
+  border: none;
+  padding: 3.125rem 5rem;
+  margin: 3.125rem -0.9375rem; }
+  /* line 66, ../scss/style-reverie/_general.scss */
+  .entry-author .avatar {
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem; }
+  /* line 71, ../scss/style-reverie/_general.scss */
+  .entry-author h4 a {
+    color: #999; }
+    /* line 73, ../scss/style-reverie/_general.scss */
+    .entry-author h4 a:hover, .entry-author h4 a:focus {
+      color: #222222; }
+  /* line 78, ../scss/style-reverie/_general.scss */
+  .entry-author p {
+    color: #bbb; }
+
+/* line 85, ../scss/style-reverie/_general.scss */
+.entry-tags {
+  color: #999;
+  font-size: 0.9375rem; }
+  /* line 88, ../scss/style-reverie/_general.scss */
+  .entry-tags a {
+    color: #999; }
+    /* line 90, ../scss/style-reverie/_general.scss */
+    .entry-tags a:hover, .entry-tags a:focus {
+      color: #222222; }
+
+/* line 98, ../scss/style-reverie/_general.scss */
+.avatar {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  float: left; }
+
+/* line 104, ../scss/style-reverie/_general.scss */
+.admin-bar > .fixed {
+  margin-top: 2rem; }
+
+/* line 108, ../scss/style-reverie/_general.scss */
+.f-topbar-fixed > .container {
+  margin-top: 2rem; }
+
+/* line 3, ../scss/style-reverie/_images.scss */
+figure {
+  margin: 0 auto 1.25rem; }
+
+/* line 8, ../scss/style-reverie/_images.scss */
+figure img {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+/* line 12, ../scss/style-reverie/_images.scss */
+img.alignright {
+  float: right;
+  margin: 0 0 18px 18px; }
+
+/* line 17, ../scss/style-reverie/_images.scss */
+img.alignleft {
+  float: left;
+  margin: 0 18px 18px 0; }
+
+/* line 22, ../scss/style-reverie/_images.scss */
+img.aligncenter {
+  display: block;
+  margin: 18px auto; }
+
+/* line 29, ../scss/style-reverie/_images.scss */
+.gallery dt, .gallery dl {
+  display: inline-block; }
+/* line 32, ../scss/style-reverie/_images.scss */
+.gallery dl {
+  margin-left: 0.5625rem;
+  margin-right: 0.5625rem; }
+
+/* line 39, ../scss/style-reverie/_images.scss */
+figure.figure {
+  margin: 0 auto;
+  display: table; }
+  /* line 42, ../scss/style-reverie/_images.scss */
+  figure.figure figcaption {
+    font-size: 0.875rem;
+    line-height: 1.4;
+    font-style: italic;
+    padding: 8px 10px;
+    color: #999;
+    margin-bottom: 1.25rem;
+    display: table-caption;
+    caption-side: bottom; }
+
+/* line 54, ../scss/style-reverie/_images.scss */
+figure.alignright.figure {
+  float: right;
+  margin: 0 0 18px 18px; }
+
+/* line 59, ../scss/style-reverie/_images.scss */
+figure.alignleft.figure {
+  float: left;
+  margin: 0 18px 18px 0; }
+
+/* line 64, ../scss/style-reverie/_images.scss */
+.footer-widget {
+  background-color: #eee; }
+
+/* line 3, ../scss/style-reverie/_pagination.scss */
+.page-numbers {
+  color: #999;
+  display: block;
+  height: 1.5rem;
+  margin-left: -0.3125rem; }
+  /* line 100, ../scss/foundation/components/_pagination.scss */
+  .page-numbers li {
+    height: 1.5rem;
+    color: #222222;
+    font-size: 0.875rem;
+    margin-left: 0.3125rem; }
+    /* line 106, ../scss/foundation/components/_pagination.scss */
+    .page-numbers li a {
+      display: block;
+      padding: 0.0625rem 0.625rem 0.0625rem;
+      color: #999999;
+      -webkit-border-radius: 3px;
+      border-radius: 3px; }
+    /* line 113, ../scss/foundation/components/_pagination.scss */
+    .page-numbers li:hover a,
+    .page-numbers li a:focus {
+      background: #e6e6e6; }
+    /* line 51, ../scss/foundation/components/_pagination.scss */
+    .page-numbers li.unavailable a {
+      cursor: default;
+      color: #999999; }
+    /* line 55, ../scss/foundation/components/_pagination.scss */
+    .page-numbers li.unavailable:hover a, .page-numbers li.unavailable a:focus {
+      background: transparent; }
+    /* line 64, ../scss/foundation/components/_pagination.scss */
+    .page-numbers li.current a {
+      background: #008cba;
+      color: white;
+      font-weight: bold;
+      cursor: default; }
+      /* line 70, ../scss/foundation/components/_pagination.scss */
+      .page-numbers li.current a:hover, .page-numbers li.current a:focus {
+        background: #008cba; }
+  /* line 124, ../scss/foundation/components/_pagination.scss */
+  .page-numbers li {
+    float: left;
+    display: block; }
+
+/* line 8, ../scss/style-reverie/_pagination.scss */
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block; }
+
+/* line 13, ../scss/style-reverie/_pagination.scss */
+.page-numbers li span.current {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+/* line 17, ../scss/style-reverie/_pagination.scss */
+.page-numbers li {
+  margin-left: 0.5rem; }
+
+/* line 23, ../scss/style-reverie/_pagination.scss */
+.page-numbers li span:hover a,
+.page-numbers li span a:focus {
+  background: #e6e6e6; }
+/* line 27, ../scss/style-reverie/_pagination.scss */
+.page-numbers li span.current {
+  background: #008cba;
+  padding: 0.0625rem 0.625rem 0.0625rem;
+  color: white;
+  font-weight: bold;
+  cursor: default; }
+
+/* line 3, ../scss/style-reverie/_comment.scss */
+ol.commentlist {
+  margin-left: 0;
+  margin-top: 2em; }
+  /* line 6, ../scss/style-reverie/_comment.scss */
+  ol.commentlist p {
+    font-size: 0.9375rem;
+    line-height: 1.5; }
+  /* line 10, ../scss/style-reverie/_comment.scss */
+  ol.commentlist ul.children {
+    margin-left: 4rem; }
+  /* line 13, ../scss/style-reverie/_comment.scss */
+  ol.commentlist li {
+    list-style: none;
+    margin-bottom: 2em; }
+    /* line 17, ../scss/style-reverie/_comment.scss */
+    ol.commentlist li .comment-author img {
+      float: left;
+      margin: 0 1em 0 0; }
+    /* line 21, ../scss/style-reverie/_comment.scss */
+    ol.commentlist li .author-meta {
+      display: inline-block; }
+      /* line 23, ../scss/style-reverie/_comment.scss */
+      ol.commentlist li .author-meta cite.fn {
+        font-style: normal;
+        font-weight: 600;
+        margin-right: 0.5rem; }
+      /* line 28, ../scss/style-reverie/_comment.scss */
+      ol.commentlist li .author-meta time a {
+        color: #ccc;
+        font-size: 0.875rem;
+        margin-right: 0.5rem; }
+      /* line 33, ../scss/style-reverie/_comment.scss */
+      ol.commentlist li .author-meta .comment-edit-link {
+        color: #bbb;
+        font-size: 0.875rem; }
+    /* line 38, ../scss/style-reverie/_comment.scss */
+    ol.commentlist li section.comment {
+      margin-left: 4rem;
+      margin-bottom: 2rem; }
+      /* line 41, ../scss/style-reverie/_comment.scss */
+      ol.commentlist li section.comment a.comment-reply-link {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #bbb; }
+        /* line 45, ../scss/style-reverie/_comment.scss */
+        ol.commentlist li section.comment a.comment-reply-link:hover, ol.commentlist li section.comment a.comment-reply-link:focus {
+          color: #222222; }
+
+/* line 2, ../scss/style-reverie/_sidebar.scss */
+#sidebar {
+  margin-top: 1.25rem; }
+
+/* line 8, ../scss/style-reverie/_sidebar.scss */
+#sidebar .panel, .footer-widget .panel {
+  border: none;
+  background-color: #0092a5;
+  padding: 1.5rem 1.875rem;
+  border-radius: 5px; }
+  /* line 13, ../scss/style-reverie/_sidebar.scss */
+  #sidebar .panel a, .footer-widget .panel a {
+    color: #09def1;
+    font-size: 0.9375rem; }
+    /* line 16, ../scss/style-reverie/_sidebar.scss */
+    #sidebar .panel a:hover, #sidebar .panel a:focus, .footer-widget .panel a:hover, .footer-widget .panel a:focus {
+      color: #000000; }
+/* line 21, ../scss/style-reverie/_sidebar.scss */
+#sidebar ul, .footer-widget ul {
+  list-style-type: none;
+  margin-left: 0; }
+/* line 26, ../scss/style-reverie/_sidebar.scss */
+#sidebar .widget h4, .footer-widget .widget h4 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  color: #ffffff;
+  font-weight: 300; }
+
+/* line 2, ../scss/style-reverie/_footer.scss */
+footer.full-width {
+  background-color: #000000;
+  /* border-top: 1px solid #ccc; */
+  padding-top: 3rem; }
+  /* line 6, ../scss/style-reverie/_footer.scss */
+  footer.full-width p {
+    font-size: 0.875rem; }
+  /* line 9, ../scss/style-reverie/_footer.scss */
+  footer.full-width a {
+    color: #666;
+    font-size: 0.9375rem; }
+    /* line 12, ../scss/style-reverie/_footer.scss */
+    footer.full-width a:hover, footer.full-width a:focus {
+      color: #222222; }
+  /* line 16, ../scss/style-reverie/_footer.scss */
+  footer.full-width .love-reverie {
+    border-top: 1px solid #ccc;
+    padding-top: 1.5rem; }
+
+@media only screen {
+  /* line 21, ../scss/style-reverie/_breakpoint-specific.scss */
+  .entry-author .avatar {
+    margin-bottom: 1.25rem; } }
+@media only screen and (min-width: 40.063em) {
+  /* line 28, ../scss/style-reverie/_breakpoint-specific.scss */
+  #content {
+    padding: 3.125rem; }
+
+  /* line 31, ../scss/style-reverie/_breakpoint-specific.scss */
+  .entry-author {
+    margin: 3.125rem -3.125rem; } }
+@media only screen and (min-width: 64.063em) {
+  /* line 37, ../scss/style-reverie/_breakpoint-specific.scss */
+  #sidebar {
+    padding-left: 1.875rem;
+    padding-right: 0;
+    margin-top: 0; }
+
+  /* line 42, ../scss/style-reverie/_breakpoint-specific.scss */
+  .footer-widget {
+    margin-top: 3rem;
+    padding-top: 2rem; } }
+/* line 72, ../scss/style.scss */
+header.contain-to-grid {
+  border-top: 1px solid #127c8a; }
+
+/* line 1, ../scss/_featured.scss */
+li .inner {
+  background-color: #045661;
+  border: 5px;
+  /* padding: 5px; */
+  word-wrap: break-word;
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid #0394a7; }
+
+/* line 10, ../scss/_featured.scss */
+li .inner p {
+  font-family: 'Junge', serif;
+  font-size: 0.9em;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  color: #F4F4F4;
+  font-weight: lighter; }
+
+/* line 20, ../scss/_featured.scss */
+li .inner h2 a {
+  font-size: 0.4em;
+  background: rgba(0, 0, 0, 0.73);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  /* position: relative; */
+  padding: 10px;
+  /* margin: 20px 0 0 0; */
+  word-wrap: break-word;
+  border-radius: 5px;
+  border: 1px solid #00bcdd; }
+
+/* line 34, ../scss/_featured.scss */
+.view {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+/* line 40, ../scss/_featured.scss */
+.view .mask, .view .content {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0; }
+
+/* line 47, ../scss/_featured.scss */
+.view .my_img {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: block;
+  position: relative;
+  height: 200px; }
+
+/* line 57, ../scss/_featured.scss */
+.view .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background-color: rgba(18, 124, 138, 0.9);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  top: 0;
+  left: 0;
+  padding-bottom: 300px;
+  width: 100%; }
+
+/* line 72, ../scss/_featured.scss */
+.view h2 {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 88, ../scss/_featured.scss */
+.view p {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear; }
+
+/* line 103, ../scss/_featured.scss */
+.view:hover .my_img {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); }
+
+/* line 110, ../scss/_featured.scss */
+.view a.info {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 120, ../scss/_featured.scss */
+.view:hover .mask {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1; }
+
+/* line 125, ../scss/_featured.scss */
+.view:hover h2,
+.view:hover p,
+.view:hover a.info {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px); }
+
+/* line 137, ../scss/_featured.scss */
+.view:hover p {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s; }
+
+/* line 144, ../scss/_featured.scss */
+.view:hover a.info {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s; }
+
+/* line 153, ../scss/_featured.scss */
+.view a.info {
+  font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: rgba(18, 124, 138, 0.66);
+  color: #ffffff;
+  -webkit-box-shadow: 0 0 1px #000;
+  -moz-box-shadow: 0 0 1px #000;
+  box-shadow: 0 0 1px #000;
+  border-radius: 5px; }
+
+/* line 166, ../scss/_featured.scss */
+.fpostgl h4 {
+  background-color: #045762;
+  padding: 10px;
+  border-radius: 5px; }
+
+/* line 173, ../scss/_featured.scss */
+.fpostgl h4 a {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-weight: 300; }
+
+/* line 180, ../scss/_featured.scss */
+.fpostgl h4 a:hover {
+  color: #04c7e0; }
+
+/* line 184, ../scss/_featured.scss */
+.featlist p {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Junge', serif; }
+
+/* line 189, ../scss/_featured.scss */
+hr.linebreak {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, transparent, rgba(4, 87, 98, 0.98), transparent);
+  background-image: -moz-linear-gradient(left, transparent, rgba(4, 87, 98, 0.98), transparent);
+  background-image: -ms-linear-gradient(left, transparent, rgba(4, 87, 98, 0.98), transparent);
+  background-image: -o-linear-gradient(left, transparent, rgba(4, 87, 98, 0.98), transparent); }
+
+/* line 199, ../scss/_featured.scss */
+#featuredwpic {
+  padding-top: 30px;
+  margin-top: -33px;
+  margin-bottom: 25px;
+  background-color: black;
+  width: 100% !important;
+  clear: both;
+  background-image: url(../img/featback.png); }
+
+/*
+g{
+	background-color: #969696;
+}
+*/
+/* line 1, ../scss/_parallax.scss */
+.paraback {
+  background: url(../img/mario.jpg) no-repeat center center fixed;
+  height: 400px; }
+
+/* line 1, ../scss/_single.scss */
+.gsinglepost .panel {
+  background-color: white;
+  border: 1px solid #fff; }
+
+/* line 6, ../scss/_single.scss */
+.gsinglepost .panel p {
+  font-family: 'Junge', serif;
+  /* font-weight: bold; */
+  font-size: 1.2em; }
+
+/* line 12, ../scss/_single.scss */
+.gsinglepost .panel h4 {
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  background: #127c8a;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #00badb; }
+
+/* line 22, ../scss/_single.scss */
+.gsinglepost .panel h4 a {
+  color: #fff; }
+
+/* line 26, ../scss/_single.scss */
+.entry-author {
+  width: 100%;
+  margin: 0;
+  padding: 20px; }
+
+/* line 32, ../scss/_single.scss */
+.entry-author h4 {
+  width: 50%; }
+
+/* line 36, ../scss/_single.scss */
+#comments h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #00879e; }
+
+/* line 1, ../scss/_category.scss */
+.catpage #content {
+  background-color: white;
+  border: 1px solid #fff; }
+
+/* line 5, ../scss/_category.scss */
+.catlist {
+  background-color: #04616d;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px; }
+
+/* line 12, ../scss/_category.scss */
+.catlist a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+
+/* line 18, ../scss/_category.scss */
+.catlist a:hover {
+  color: #04c7e0; }
+
+/* line 22, ../scss/_category.scss */
+.catauthor {
+  font-family: 'Open Sans', sans-serif;
+  color: #04616d;
+  font-weight: 100;
+  font-size: 0.9em;
+  font-style: italic; }
+
+/* line 30, ../scss/_category.scss */
+.catauthor a {
+  color: #0daabe;
+  font-weight: 400; }
+
+/* line 35, ../scss/_category.scss */
+.catauthor a:hover {
+  text-decoration: underline; }
+
+/* line 38, ../scss/_category.scss */
+.cat_title {
+  font-family: 'Open Sans', sans-serif;
+  color: #04616d;
+  font-size: 2.5em;
+  font-weight: 200; }
+
+/* line 45, ../scss/_category.scss */
+.mainline {
+  background-color: #04616d;
+  border-color: #04616d; }
+
+/* line 50, ../scss/_category.scss */
+.customedit h2 a {
+  color: white; }
+
+/* line 54, ../scss/_category.scss */
+.customedit h2 a:hover {
+  color: #04c7e0; }
+
+/* line 1, ../scss/_footer.scss */
+.cunyfancynav {
+  padding-top: 20px;
+  background: #127c8a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #127c8a 0%, black 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #127c8a), color-stop(100%, black));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #127c8a 0%, black 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #127c8a 0%, black 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #127c8a 0%, black 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #127c8a 0%, black 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#127c8a', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  /* 	border: 0px; */ }
+
+/* line 15, ../scss/_footer.scss */
+.footer-widget {
+  padding-top: 0px; }
+
+/* line 19, ../scss/_footer.scss */
+.cunyfancynav.large-3 columns {
+  background-color: #48d948; }
+
+/* line 23, ../scss/_footer.scss */
+footer .mycunycopyright {
+  font-weight: 100;
+  background-color: black;
+  color: white;
+  border: none; }
+  /* line 28, ../scss/_footer.scss */
+  footer .mycunycopyright h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 20px; }
+  /* line 34, ../scss/_footer.scss */
+  footer .mycunycopyright h5 a {
+    font-size: 0.9em;
+    color: #008ea7; }
+  /* line 39, ../scss/_footer.scss */
+  footer .mycunycopyright h5 a:hover {
+    color: #cccccc; }
+
+/* line 1, ../scss/_page.scss */
+.catpage h2 {
+  background-color: #04616d;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  font-weight: 100;
+  color: #fff;
+  font-size: 1.5em; }
+
+/* line 11, ../scss/_page.scss */
+.catpaget a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100; }
+
+/* line 17, ../scss/_page.scss */
+.catpage a:hover {
+  color: #04c7e0; }

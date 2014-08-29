@@ -1,0 +1,89 @@
+/* Welcome and glad you are using Reverie.
+ * This is the main stylesheet loaded by default.
+ * Edit the file and have fun.
+ * http://themefortress.com/reverie */
+
+// import normalize, stay at top
+// @import "normalize";
+
+// Global Foundation Settings
+@import "settings";
+
+// Tweak the mixin for WordPress, this might create some extra CSS in additional to app.css
+@import "foundation/components/pagination";
+
+// Reverie comes with a standalone Foundation stylesheet already
+// @import "foundation";
+
+// Load some Compass magic, note you will need to install Compass first
+@import "compass/css3/shared";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+
+/* Start to customize Reverie */
+// the next imports are default stylings Reverie has added to help fit Foundation into WordPress
+// For the most part you can modify these where you need to or even remove the styles.
+// You can also just leave them be until one conflicts with what you want to do
+
+//In this child theme the Reverie styling has been moved to separate files and grouped by the type of content they style (see below).
+
+// define content padding for later use
+//Reverie added, to standardize padding
+//you can change but do not remove unless you also remove all
+//references to $content-padding
+$content-padding: rem-calc(50);
+
+@import "style-reverie/general";
+
+@import "style-reverie/images";
+
+@import "style-reverie/pagination";
+
+@import "style-reverie/comment";
+
+@import "style-reverie/sidebar";
+
+@import "style-reverie/footer";
+
+@import "style-reverie/breakpoint-specific";
+
+
+// ==========================================
+// Default WordPress CSS classes.
+
+// By default WordPress adds a lot of classes to different UI elements. 
+// These partials show them. 
+//Uncomment the imports to use one or more of them, or copy from the files to your own styles below.
+
+// @import "style-wp-default/wp-body";
+// @import "style-wp-default/wp-comments";
+// @import "style-wp-default/wp-post-page";
+// @import "style-wp-default/wp-sidebar";
+
+
+// ==========================================
+
+// Add your Custom CSS here. This is where you add CSS that is specific to your theme and WordPress
+// If you are looking to modify the default Foundation styles then start with the _settings.scss file
+
+
+
+
+header.contain-to-grid {
+border-top: 1px solid $topbar-bg-color;
+}
+
+
+@import "featured"; //this is for featured post on home page
+
+@import "parallax";
+
+@import "single"; //this is for single post 
+
+@import "category"; //This adds custom style for category page
+
+@import "footer"; //this imports custom footer css
+
+@import "search"; //custom  search
+
+@import "page";//custom page style

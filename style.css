@@ -1,0 +1,27 @@
+/*
+Theme Name: Cuny Games Network 
+Description: Child theme for the profstein's fork of Reverie. Change this to be your theme description 
+Author: Group 2 
+Template: reverie-master
+*/
+/* -------------------------------------------------- 
+
+	This stylesheet will not be loaded by default.
+	
+	The main stylesheet is located in css/style.css 
+	and the Sass file that creates it is scss/style.scss.
+
+	Reverie uses lib/enqueue-style.php to load css/app.css and css/style.css
+	The functions.php file loads the lib/enqueue-style.php
+
+	Reverie-Bundle has been modified from the orginal Reverie to include all foundation scss files so that you don't have to have the foundation gem installed to compile the Sass.
+	You will need to have Compass installed or a GUI compiler that will compile Compass. Two free options are
+	
+	Prepros: http://alphapixels.com/prepros/
+	Scout: http://mhs.github.io/scout-app/
+	
+	So you will be able to modify the styles using the files in the scss folder.
+
+  Make sure you have a Sass compiler running and that it is set to watch the files in the scss folder and output to the css folder.
+
+-------------------------------------------------- */
